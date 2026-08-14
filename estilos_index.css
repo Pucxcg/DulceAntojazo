@@ -186,8 +186,13 @@ a {
     background: var(--crema);
     border: 2px solid var(--cafe-d);
     box-shadow: 4px 4px 0px var(--cafe-d);
-    padding: 28px 24px 22px;
+    padding: 20px 20px 18px;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
 }
 .flip-front::before {
     content: '';
@@ -231,6 +236,7 @@ a {
 }
 .card-price {
     display: inline-block;
+    max-width: 100%;
     background: var(--negro);
     color: var(--blanco);
     font-size: 0.8rem;
@@ -239,7 +245,7 @@ a {
     border-radius: 20px;
     margin-bottom: 14px;
 }
-.card-flavors { list-style: none; padding: 0; }
+.card-flavors { list-style: none; padding: 0; width: 100%; text-align: left; }
 .card-flavors li {
     font-size: 0.9rem;
     color: var(--text-b);
@@ -263,11 +269,12 @@ a {
 }
 .card-img {
     width: 100%;
-    height: 200px;
+    height: 190px;
     object-fit: contain;
-    background: var(--crema);
+    background: #fff;
     border-radius: 12px;
     border: 2px solid var(--cafe-d);
+    margin-bottom: 14px;
 }
 
 /* ── SHOTS ── */

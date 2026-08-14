@@ -52,14 +52,12 @@ function calcularShot_1onz() { calcularShots(); }
 /* ── 2 Onz: menos de 20 → $3.200 | 20+ → $2.700 ── */
 function calcularShot_2onz() { calcular('cantidad2', 'resultado2', 20, 3200, 2700); }
 
-/* ── 3 Onz: menos de 20 → $4.200 | 20+ → $3.700 ── */
-function calcularShot_3onz() { calcular('cantidad3', 'resultado3', 20, 4200, 3700); }
+/* ── Enter en cada input (solo si existen en la página) ── */
+const _c1 = document.getElementById('cantidad1');
+if (_c1) _c1.addEventListener('keydown', e => { if (e.key === 'Enter') calcularShots(); });
 
-/* ── Enter en cada input ── */
-document.getElementById('cantidad1').addEventListener('keydown', e => { if (e.key === 'Enter') calcularShots(); });
-document.getElementById('cantidad2').addEventListener('keydown', e => { if (e.key === 'Enter') calcularShot_2onz(); });
-const _cantidad3 = document.getElementById('cantidad3');
-if (_cantidad3) { _cantidad3.addEventListener('keydown', e => { if (e.key === 'Enter') calcularShot_3onz(); }); }
+const _c2 = document.getElementById('cantidad2');
+if (_c2) _c2.addEventListener('keydown', e => { if (e.key === 'Enter') calcularShot_2onz(); });
 
 
 //Scripts para eventos.html
