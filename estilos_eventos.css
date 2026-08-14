@@ -18,7 +18,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     color: var(--text);
     overflow-x: hidden;
-    background-image: url('fondo.png'); /* ruta de tu imagen */
+    background-image: url('fondo.webp'); /* ruta de tu imagen */
     background-size: cover;        /* hace que la imagen cubra toda la pantalla */
     background-repeat: no-repeat;  /* evita que se repita */
     background-position: center;   /* centra la imagen */
