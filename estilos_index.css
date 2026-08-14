@@ -10,6 +10,8 @@
     --text-s:   #ffffff;
     --text-b:  #000000;
     --negro:    #000000;
+    --cafe:     #4a1258;   /* morado oscuro de la marca */
+    --lavanda:  #e6d9f2;   /* lavanda claro */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -94,7 +96,6 @@ a {
 .hero {
     position: relative;
     z-index: 1;
-    background: var(--lavanda);
     padding: 60px 24px 50px;
     text-align: center;
 }
@@ -109,15 +110,14 @@ a {
     50%      { transform: translateY(-8px); }
 }
 .hero h1 {
-    font-family: '', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
     font-size: clamp(3rem, 9vw, 5.5rem);
     font-weight: 700;
     color: var(--blanco);
     line-height: 1;
 }
-.hero h1 span { color: var(--cafe-l); font-family: ''; }
+.hero h1 span { color: var(--cafe-l);  }
 .hero p {
-    font-family: '';
     margin-top: 50px;
     font-size: 1rem;
     color: var(--text-s);
@@ -139,19 +139,19 @@ a {
     margin: 0 auto;
 }
 .section-label {
-    font-family: '';
-    font-size: 3rem;
+    font-size: 0.85rem;
     font-weight: 600;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--blanco);
     margin-bottom: 6px;
     text-align: center;
 }
 .section-title {
-    font-family: '';
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 700;
     color: var(--blanco);
+    text-align: center;
     margin-bottom: 36px;
 }
 
@@ -224,7 +224,6 @@ a {
     margin-bottom: 14px;
 }
 .card-name {
-    font-family: '';
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--cafe);
@@ -366,7 +365,7 @@ a {
     to   { opacity:1; transform: translateY(0); }
 }
 .result-card {
-    background: var(--white);
+    background: var(--cafe);
     border: 2px solid var(--cafe-d);
     border-radius: 16px;
     padding: 22px 26px;
