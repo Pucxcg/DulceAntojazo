@@ -11,7 +11,7 @@ function mostrarResultado(resultadoEl, cantidad, precioUnitario, descuento) {
           <p class="r-value">$${total.toLocaleString('es-CO')} pesos</p>
           <p class="r-detail">
             ${cantidad} shot${cantidad > 1 ? 's' : ''} × $${precioUnitario.toLocaleString('es-CO')} c/u
-            ${descuento ? ' · <strong style="color:var(--crema)">¡Precio especial!</strong>' : ''}
+            ${descuento ? ' · <strong>¡Precio especial!</strong>' : ''}
           </p>
         </div>
       </div>`;

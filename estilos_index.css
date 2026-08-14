@@ -379,10 +379,33 @@ a {
     display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
     box-shadow: 4px 4px 0 var(--cafe-d);
 }
-.result-icon { font-size: 2.4rem; }
-.r-label { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(245,238,220,.65); margin-bottom: 2px; }
-.r-value { font-family: 'Cabin Sketch', cursive; font-size: 2rem; color: var(--crema); line-height: 1.1; }
-.r-detail { font-size: 0.85rem; color: rgba(245,238,220,.75); margin-top: 3px; }
+.result-icon { font-size: 2.4rem; line-height: 1; }
+
+/* Especificidad alta a proposito: .calc-box p pisaba estos estilos */
+.calc-box .result-card p { margin-bottom: 0; }
+
+.calc-box .result-card .r-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(245, 238, 220, .75);
+    margin-bottom: 6px;
+}
+.calc-box .result-card .r-value {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+.calc-box .result-card .r-detail {
+    font-size: 0.9rem;
+    color: rgba(245, 238, 220, .85);
+    margin-top: 2px;
+}
+.calc-box .result-card .r-detail strong { color: #ffd97d; }
 .result-error {
     background: rgba(220,60,60,0.1);
     border: 2px solid rgba(220,80,80,0.35);
