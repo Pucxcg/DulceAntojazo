@@ -58,9 +58,8 @@ function calcularShot_3onz() { calcular('cantidad3', 'resultado3', 20, 4200, 370
 /* ── Enter en cada input ── */
 document.getElementById('cantidad1').addEventListener('keydown', e => { if (e.key === 'Enter') calcularShots(); });
 document.getElementById('cantidad2').addEventListener('keydown', e => { if (e.key === 'Enter') calcularShot_2onz(); });
-document.getElementById('cantidad3').addEventListener('keydown', e => { if (e.key === 'Enter') calcularShot_3onz(); });
+const _cantidad3 = document.getElementById('cantidad3');
+if (_cantidad3) { _cantidad3.addEventListener('keydown', e => { if (e.key === 'Enter') calcularShot_3onz(); }); }
 
 
 //Scripts para eventos.html
-
-
