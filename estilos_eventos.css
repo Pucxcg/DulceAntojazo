@@ -31,6 +31,12 @@ body {
     color: var(--blanco);
     padding: 10px;
 }
+
+.eventos{
+    color: var(--text-s);
+    font-family:'Nosifer', cursive;
+    padding: 10px;
+}
 a {
     color: white;
     text-decoration: none;
